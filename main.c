@@ -162,6 +162,12 @@ int main() {
         tasks[i].remaining_time = tasks[i].burst_time;
         tasks[i].first_execution = -1;
     }
+    fcfs(tasks,n);
+    printf("\n");
+    sjfNonPreemptive(tasks,n);
+    printf("\n");
+    for (int i = 0; i < n; i++) tasks[i].remaining_time = tasks[i].burst_time;
+    sjfPreemptive(tasks, n);
 
     
 
