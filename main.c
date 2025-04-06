@@ -22,13 +22,7 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
-void displayResults(Task *tasks, int n) {
-    printf("\nTask\tAT\tBT\tCT\tTAT\tWT\tRT\n");
-    for (int i = 0; i < n; i++) {
-        printf("T%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
-               tasks[i].id, tasks[i].arrival_time, tasks[i].burst_time,
-               tasks[i].completion_time, tasks[i].turnaround_time,
-               tasks[i].waiting_time, tasks[i].response_time);
+
     }
 }
 
